@@ -28,7 +28,7 @@ CUDA_VISIBLE_DEVICES=2 python train_student_stage1_multigpu.py --path_t='save/mo
 ```
 Multi-GPU training:
 ```
-CUDA_VISIBLE_DEVICES=1,2 python -m torch.distributed.launch --nproc_per_node=2 --master_port=29500 train_student_stage1_multigpu.py --path_t='save/models/CIFAR10/ResNet18_best.pth' --gamma=0.5 --alpha=0.5 --beta=1000 --model_s='CustomResNet18' --dataset='imagenet' --distill='kd' --sensitivity='ResNet18_imagenet_relu300k_sensitivity' --t1_epochs=90 --learning_rate=0.01 --lr_decay_epochs='50,80'
+CUDA_VISIBLE_DEVICES=1,2 python -m torch.distributed.launch --nproc_per_node=2 --master_port=29500 train_student_stage1_multigpu.py --path_t='save/models/imagenet/ResNet18_best.pth' --gamma=0.5 --alpha=0.5 --beta=1000 --model_s='CustomResNet18' --dataset='imagenet' --distill='kd' --sensitivity='ResNet18_imagenet_relu300k_sensitivity' --t1_epochs=90 --learning_rate=0.01 --lr_decay_epochs='50,80'
 ```
 
 ### Train stage-2: Fine-tuning with frozen ReLU mask
@@ -63,7 +63,7 @@ python validate_common_corruptions.py --model=CustomResNet18 --path='save/studen
 ## Citation
 If you find this repo useful for your research, please consider citing the following work:
 ```
-@InProceedings{Vemparala_2021_CVPR,
+@InProceedings{sarkar_2024_CVPRW,
     author    = {Sarkar, Sreetama and Kundu, Souvik and Beerel, Peter},
     title     = {RLNet: Robust Linearized Networks for Efficient Private Inference},
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},

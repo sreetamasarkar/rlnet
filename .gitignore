@@ -12,3 +12,4 @@ DeepAugment/
 .vscode/
 plots/
 scripts/
+.DS_Store
