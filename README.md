@@ -1,4 +1,5 @@
 ![license](https://img.shields.io/badge/License-MIT-green.svg?labelColor=gray)
+[![arxiv](http://img.shields.io/badge/arxiv-2310.04562-yellow.svg)](https://arxiv.org/pdf/2402.05521.pdf)
 # RLNet: Robust Linearized Networks for Efficient Private Inference
 
 ## Overview
