@@ -6,13 +6,13 @@
 
 The training is performed in 3 stages: 
 
-1. Train a teacher model
+### Train a teacher model
 
 ```
 python train_teacher.py --model='ResNet18' --dataset='cifar10' --augment_mode='augmix' --attack_mode='pgd' --use2BN
 ```
 
-2. Train stage-1: ReLU mask identification
+### Train stage-1: ReLU mask identification
 
 Training with natural images:
 ```
@@ -27,7 +27,7 @@ Multi-GPU training:
 CUDA_VISIBLE_DEVICES=1,2 python -m torch.distributed.launch --nproc_per_node=2 --master_port=29500 train_student_stage1_multigpu.py --path_t='save/models/CIFAR10/ResNet18_best.pth' --gamma=0.5 --alpha=0.5 --beta=1000 --model_s='CustomResNet18' --dataset='imagenet' --distill='kd' --sensitivity='ResNet18_imagenet_relu300k_sensitivity' --t1_epochs=90 --learning_rate=0.01 --lr_decay_epochs='50,80'
 ```
 
-3. Train stage-2: Fine-tuning with fixed ReLU mask
+### Train stage-2: Fine-tuning with fixed ReLU mask
 Training with natural images:
 ```
 python train_student_stage2_multigpu.py --dataset='cifar10' --path_t='save/models/CIFAR10/ResNet18_best.pth' --gamma=0.1 --alpha=0.5 --beta=1000 --model_s='CustomResNet18' --dense --distill='attention' --learning_rate=0.01 --path_s_load='save/student_model/stage1/S:CustomResNet18_T1:ResNet18_cifar10_relu82k/CustomResNet18_stage1_best.pth'
