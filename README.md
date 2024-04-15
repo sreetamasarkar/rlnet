@@ -11,8 +11,8 @@ The training is performed in 3 stages: training a robust all ReLU teacher, gener
 
 ## Authors
 
-- [Sreetama Sarkar](https://www.linkedin.com/in/sreetama-sarkar-332a13104/) (USC)
-- [Souvik Kundu](https://www.linkedin.com/in/souvik-kundu-ph-d-64922b50/) (Intel)
+- [Sreetama Sarkar*](https://www.linkedin.com/in/sreetama-sarkar-332a13104/) (USC)
+- [Souvik Kundu*](https://www.linkedin.com/in/souvik-kundu-ph-d-64922b50/) (Intel)
 - [Peter A. Beerel](https://sites.usc.edu/eessc/) (USC)
   
 ## Paper
