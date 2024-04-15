@@ -10,6 +10,8 @@ than baseline models.
 
 The training is performed in 3 stages: training a robust all ReLU teacher, generating a ReLU mask for achieving a target number of ReLU operations in the partial ReLU model, and finally, fine-tuning the partial ReLU model with the frozen ReLU mask.
 
+## Usage
+
 ### Train a teacher model
 
 ```
