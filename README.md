@@ -1,4 +1,4 @@
-# Maskrelu with multi-gpu support
+# RLNet: Robust Linearized Networks for Efficient Private Inference
 
 <p align="center"> 
     <img src="system_diagram.svg">
@@ -13,7 +13,7 @@ python train_teacher.py --model='ResNet18' --dataset='cifar10' --augment_mode='a
 ```
 
 2. Train stage-1: ReLU mask identification
-```
+
 Training with natural images:
 ```
 python train_student_stage1_multigpu.py --path_t='save/models/CIFAR10/ResNet18_best.pth' --gamma=0.5 --alpha=0.5 --beta=1000 --model_s='CustomResNet18' --dataset='cifar10' --distill='kd' --sensitivity='ResNet18_C10_relu82k_sensitivity'
