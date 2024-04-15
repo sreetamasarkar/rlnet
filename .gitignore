@@ -1,0 +1,14 @@
+__pycache__/
+dataset/__pycache__/
+distiller_zoo/__pycache__/
+helper/__pycache__/
+logs/
+save/
+scripts/
+models/__pycache__/
+*.png
+data/
+DeepAugment/
+.vscode/
+plots/
+scripts/
