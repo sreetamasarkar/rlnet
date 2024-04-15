@@ -73,3 +73,23 @@ If you find this repo useful for your research, please consider citing the follo
     year      = {2024}
 }
 ```
+
+and the prior works in this track:
+```
+@article{kundu2023learning,
+  title={Learning to linearize deep neural networks for secure and efficient private inference},
+  author={Kundu, Souvik and Lu, Shunlin and Zhang, Yuke and Liu, Jacqueline and Beerel, Peter A},
+  journal={Interenational Conference on Learning Representation},
+  year={2023}
+}
+```
+
+```
+@inproceedings{kundu2023making,
+  title={Making models shallow again: Jointly learning to reduce non-linearity and depth for latency-efficient private inference},
+  author={Kundu, Souvik and Zhang, Yuke and Chen, Dake and Beerel, Peter A},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={4685--4689},
+  year={2023}
+}
+```
