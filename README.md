@@ -50,6 +50,9 @@ Multi-GPU Training:
 ```
 CUDA_VISIBLE_DEVICES=1,2 python -m torch.distributed.launch --master_port=29600 --nproc_per_node=2 train_student_stage2_multigpu.py --dataset='imagenet' --batch_size=256 --path_t='save/models/ResNet18_imagenet_batch_256_lr_0.05_gpu:2/ResNet18_best.pth' --gamma=0.1 --alpha=0.9 --beta=1000 --model_s='CustomResNet18' --dense --distill='attention' --learning_rate=0.01 --path_s_load='save/student_model/stage1/S:CustomResNet18_T1:ResNet18_imagenet_relu300k/CustomResNet18_stage1_best.pth'
 ```
+## Citation
+[link to paper](https://arxiv.org/pdf/2402.05521.pdf)
+
 
 ### Validate against common corruptions
 
