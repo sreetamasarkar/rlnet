@@ -5,7 +5,7 @@ This is the Pytorch code for the paper RLNet: Robust Linearized Networks for Eff
 than baseline models.
 
 <p align="center"> 
-    <img src="system_diagram.svg">
+    <img src="system_diagram.png">
 </p> 
 
 The training is performed in 3 stages: training a robust all ReLU teacher, generating a ReLU mask for achieving a target number of ReLU operations in the partial ReLU model, and finally, fine-tuning the partial ReLU model with the frozen ReLU mask.

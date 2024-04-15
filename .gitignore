@@ -1,3 +1,4 @@
+.gitignore/
 __pycache__/
 dataset/__pycache__/
 distiller_zoo/__pycache__/
