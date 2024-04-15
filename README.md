@@ -6,7 +6,7 @@
 This is the Pytorch code for the paper RLNet: Robust Linearized Networks for Efficient Private Inference. This paper presents RLNet, a class of models that can yield latency improvement via the reduction of high-latency ReLU operations while improving the model performance on both clean and corrupted images. In particular, RLNet models provide a “triple win ticket” of improved classification accuracy on clean, naturally perturbed, and gradient-based perturbed images using a shared-mask shared-weight architecture with over an order of magnitude fewer ReLUs
 than baseline models.
 <p align="center"> 
-    <img src="system_diagram.png">
+    <img src="system_diagram.svg">
 </p> 
 
 
