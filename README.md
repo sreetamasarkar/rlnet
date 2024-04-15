@@ -88,7 +88,7 @@ and the prior works in this track:
 @article{kundu2023learning,
   title={Learning to linearize deep neural networks for secure and efficient private inference},
   author={Kundu, Souvik and Lu, Shunlin and Zhang, Yuke and Liu, Jacqueline and Beerel, Peter A},
-  journal={Interenational Conference on Learning Representation},
+  journal={Interenational Conference on Learning Representation (ICLR)},
   year={2023}
 }
 ```
