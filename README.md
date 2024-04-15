@@ -1,14 +1,22 @@
+![license](https://img.shields.io/badge/License-MIT-green.svg?labelColor=gray)
 # RLNet: Robust Linearized Networks for Efficient Private Inference
 
 ## Overview
 This is the Pytorch code for the paper RLNet: Robust Linearized Networks for Efficient Private Inference. This paper presents RLNet, a class of models that can yield latency improvement via the reduction of high-latency ReLU operations while improving the model performance on both clean and corrupted images. In particular, RLNet models provide a “triple win ticket” of improved classification accuracy on clean, naturally perturbed, and gradient-based perturbed images using a shared-mask shared-weight architecture with over an order of magnitude fewer ReLUs
 than baseline models.
-
 <p align="center"> 
     <img src="system_diagram.png">
 </p> 
-
 The training is performed in 3 stages: training a robust all ReLU teacher, generating a ReLU mask for achieving a target number of ReLU operations in the partial ReLU model, and finally, fine-tuning the partial ReLU model with the frozen ReLU mask.
+
+## Authors
+
+- [Sreetama Sarkar*](https://www.linkedin.com/in/sreetama-sarkar-332a13104/) (USC)
+- [Souvik Kundu*](https://www.linkedin.com/in/souvik-kundu-ph-d-64922b50/) (Intel)
+- [Peter A. Beerel](https://sites.usc.edu/eessc/) (USC)
+  
+## Paper
+[link to paper](https://arxiv.org/pdf/2402.05521.pdf)
 
 ## Usage
 
@@ -70,5 +78,25 @@ If you find this repo useful for your research, please consider citing the follo
     title     = {RLNet: Robust Linearized Networks for Efficient Private Inference},
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
     year      = {2024}
+}
+```
+
+and the prior works in this track:
+```
+@article{kundu2023learning,
+  title={Learning to linearize deep neural networks for secure and efficient private inference},
+  author={Kundu, Souvik and Lu, Shunlin and Zhang, Yuke and Liu, Jacqueline and Beerel, Peter A},
+  journal={Interenational Conference on Learning Representation},
+  year={2023}
+}
+```
+
+```
+@inproceedings{kundu2023making,
+  title={Making models shallow again: Jointly learning to reduce non-linearity and depth for latency-efficient private inference},
+  author={Kundu, Souvik and Zhang, Yuke and Chen, Dake and Beerel, Peter A},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={4685--4689},
+  year={2023}
 }
 ```
